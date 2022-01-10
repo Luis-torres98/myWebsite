@@ -1,0 +1,46 @@
+.lt-cta-contact-me {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/image/bg-cta-2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    z-index: 1;
+    h1 {
+        color: #fff;
+    }
+    p {
+        color: #fff;
+    }
+    .contact-me {
+        font-size: 15px;
+        padding: 10px;
+        border: 2px solid teal;
+        background: transparent;
+        color: #fff;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: ease-in-out all 0.4s;
+
+        &:hover {
+            transition: ease-in-out all 0.4s;
+            background: teal;
+            color: #fff;
+        }
+    }
+    &::after {
+        content: '';
+        background-color: rgba(0, 0, 0, 0.3);
+        top: 0;
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
